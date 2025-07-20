@@ -211,7 +211,7 @@ function Mendeleev:DoTooltip(frame,link,id)
 	end
 
 	local _, iLevel, stack
-	_,_,_,_,_,_,stack = GetItemInfo(id)
+	_,_,_,iLevel,_,_,stack = GetItemInfo(id)
 	
 	if (not self.db.profile.stacksize) then
 		if(stack and stack > 1)then
